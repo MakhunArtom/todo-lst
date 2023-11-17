@@ -1,6 +1,6 @@
 import { Outlet } from 'react-router-dom';
 
-import { Header } from './../../pages/index';
+import { Header } from './../../components/index';
 
 export const SharedLayout = () => {
   return (
