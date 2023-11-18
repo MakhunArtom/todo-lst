@@ -5,6 +5,13 @@ import { ReactComponent as icon } from './../../svg/icon-logo.svg';
 import { ReactComponent as txt } from './../../svg/txt-logo.svg';
 
 export const Head = styled.header`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+
+  background-color: #ffffff;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.06);
 `;
 
@@ -59,39 +66,40 @@ export const StyledLink = styled(NavLink)`
   color: rgba(0, 0, 0, 0.87);
   text-decoration: none;
 
+  transition: color 250ms linear;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    display: inline-block;
+    width: 100%;
+    height: 2px;
+
+    opacity: 0;
+    background-color: blue;
+
+    transition: opacity 250ms linear;
+  }
+
   &:hover,
   &:focus {
-    font-weight: 600;
+    color: blue;
+  }
 
-    &::after {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      right: 0;
-
-      display: inline-block;
-      width: 100%;
-      height: 2px;
-
-      background-color: blue;
-    }
+  &:hover::after,
+  &:focus::after {
+    opacity: 1;
   }
 
   &.active {
-    font-weight: 600;
+    color: blue;
+  }
 
-    &::after {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      right: 0;
-
-      display: inline-block;
-      width: 100%;
-      height: 2px;
-
-      background-color: #4772fa;
-    }
+  &.active::after {
+    opacity: 1;
   }
 `;
 
@@ -106,9 +114,9 @@ export const AuturizeLink = styled(NavLink)`
   border-radius: 6px;
   text-decoration: none;
 
-  &:hover {
-    font-weight: 600;
+  transition: border 250ms linear;
 
+  &:hover {
     border: 1px solid #000000;
   }
 `;
