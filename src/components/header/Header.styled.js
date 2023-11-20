@@ -116,7 +116,8 @@ export const AuturizeLink = styled(NavLink)`
 
   transition: border 250ms linear;
 
-  &:hover {
+  &:hover,
+  &:focus {
     border: 1px solid #000000;
   }
 `;

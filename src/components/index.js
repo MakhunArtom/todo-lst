@@ -1,5 +1,9 @@
-import { Conteiner } from './conteiner/Conteiner';
 import { SharedLayout } from './sharedLayout/SharedLayout ';
-import { Header } from './header/Header';
+import { Conteiner } from './conteiner/Conteiner';
 
-export { SharedLayout, Conteiner, Header };
+import { BtnLink } from './btnLink/BtnLink';
+
+import { Header } from './header/Header';
+import { Hero } from './hero/Hero';
+
+export { SharedLayout, Conteiner, BtnLink, Header, Hero };

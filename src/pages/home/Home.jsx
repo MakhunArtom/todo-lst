@@ -1,3 +1,9 @@
+import { Hero } from './../../components/index';
+
 export const Home = () => {
-  return <></>;
+  return (
+    <>
+      <Hero></Hero>
+    </>
+  );
 };
