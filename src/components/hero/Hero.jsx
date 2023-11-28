@@ -1,10 +1,12 @@
 import { Section, Wraper, Titel, Text } from './Hero.styled';
 
-import heroImg from './../../img/heroAppImg.png';
+import { appImeges } from './../../img/index';
 
 import { Conteiner, BtnLink } from './../index';
 
 export const Hero = () => {
+  const { homeImeges } = appImeges;
+
   return (
     <Section>
       <Conteiner>
@@ -27,7 +29,7 @@ export const Hero = () => {
           </div>
 
           <div>
-            <img width={590} height={417} src={heroImg} alt="device Tablet"></img>
+            <img width={590} height={417} src={homeImeges.heroImg} alt="device Tablet"></img>
           </div>
         </Wraper>
       </Conteiner>

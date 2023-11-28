@@ -10,7 +10,7 @@ import {
   Text,
 } from './HomeSection.styled';
 
-export const HomeSection = ({ options: { type = 'defult', img, titel, text } }) => {
+export const HomeSection = ({ options: { type = 'defult', img, titel, text, alt } }) => {
   return (
     <Section type={type}>
       <Conteiner>
@@ -21,7 +21,7 @@ export const HomeSection = ({ options: { type = 'defult', img, titel, text } }) 
           </TextWrap>
 
           <ImgWraper>
-            <SectionImg src={img} alt="wadsd" />
+            <SectionImg src={img} alt={alt} />
           </ImgWraper>
         </Wraper>
       </Conteiner>

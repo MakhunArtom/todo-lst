@@ -1,11 +1,11 @@
-import { Hero, HomeSection, MultiPlatforms } from './../../components/index';
+import { Hero, HomeSection } from './../../components/index';
 
 import {
   OrganizeSectionContent,
   CalendarSectionContent,
   UnaiteSectionContent,
   CollaboratingSectionContent,
-} from '../../constants/Contants';
+} from '../../constants/home/homeConstant';
 
 export const Home = () => {
   return (
