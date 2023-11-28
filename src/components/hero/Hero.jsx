@@ -1,6 +1,6 @@
 import { Section, Wraper, Titel, Text } from './Hero.styled';
 
-import organaizImg from './../../img/organaiz.png';
+import heroImg from './../../img/heroAppImg.png';
 
 import { Conteiner, BtnLink } from './../index';
 
@@ -27,7 +27,7 @@ export const Hero = () => {
           </div>
 
           <div>
-            <img width={590} height={417} src={organaizImg} alt="desctop" />
+            <img width={590} height={417} src={heroImg} alt="device Tablet"></img>
           </div>
         </Wraper>
       </Conteiner>
