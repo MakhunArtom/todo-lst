@@ -1,11 +1,13 @@
-import { Hero, HomeSection } from './../../components/index';
+import { Hero, HomeSection, MultiPlatforms, Recomended } from './../../components/index';
 
 import {
   OrganizeSectionContent,
   CalendarSectionContent,
   UnaiteSectionContent,
   CollaboratingSectionContent,
-} from '../../constants/home/homeConstant';
+} from './../../constants/home/homeConstant';
+
+import { arreyColaborationsSvg } from './../../constants/recomended/recomendedConstant';
 
 export const Home = () => {
   return (
@@ -15,7 +17,8 @@ export const Home = () => {
       <HomeSection options={CalendarSectionContent} />
       <HomeSection options={UnaiteSectionContent} />
       <HomeSection options={CollaboratingSectionContent} />
-      {/* <MultiPlatforms /> */}
+      <MultiPlatforms />
+      <Recomended options={arreyColaborationsSvg} />
     </>
   );
 };
